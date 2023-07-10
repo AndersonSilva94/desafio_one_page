@@ -5,7 +5,11 @@
   "projects": {
     "one_page_angular": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "sass"
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
