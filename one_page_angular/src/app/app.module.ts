@@ -6,6 +6,7 @@ import { registerLocaleData } from '@angular/common';
 import localePt from '@angular/common/locales/pt';
 
 import { AppComponent } from './app.component';
+import { SharedModule } from './shared/shared.module';
 
 registerLocaleData(localePt);
 
@@ -17,6 +18,7 @@ registerLocaleData(localePt);
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    SharedModule
   ],
   providers: [
     { provide: LOCALE_ID, useValue: 'pt-BR' }
