@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { FeaturedSliderComponent } from './components/featured-slider/featured-slider.component';
+import { FeaturedSliderComponent } from 'src/app/shared/components/featured-slider/featured-slider.component';
 
 
 @NgModule({
@@ -11,8 +11,10 @@ import { FeaturedSliderComponent } from './components/featured-slider/featured-s
   imports: [
     CommonModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
-  exports: []
+  exports: [
+    FeaturedSliderComponent
+  ]
 })
 export class SharedModule { }
