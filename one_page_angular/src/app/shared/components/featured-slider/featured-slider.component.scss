@@ -6,8 +6,10 @@
     &-featured {
       width: 100%;
       &-info {
-        max-width: 50%;
+        display: flex;
+        flex-direction: column;
         &-title {
+          max-width: 398px;
           text-transform: capitalize;
           font-family: 'Merriweather';
           font-size: 36px;
@@ -21,6 +23,7 @@
         }
 
         &-subtitle {
+          max-width: 398px;
           margin-top: 17.5px;
           font-family: 'Lato';
           font-size: 19px;
