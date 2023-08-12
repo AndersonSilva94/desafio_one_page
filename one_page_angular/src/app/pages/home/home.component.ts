@@ -8,6 +8,8 @@ import { PostsService } from 'src/app/shared/services/posts.service';
 })
 export class HomeComponent implements OnInit {
 
+  featuredPost!: any
+
   constructor(
     private postsService: PostsService
   ) {}
@@ -19,7 +21,10 @@ export class HomeComponent implements OnInit {
   getAllPosts(): void {
     this.postsService.getAllPosts()
     .subscribe(
-      (res) => console.log(res),
+      (res) => {
+        this.featuredPost = res[0]
+        console.log(res)
+      },
       (err) => console.error(err)
     )
   }
