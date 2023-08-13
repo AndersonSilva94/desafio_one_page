@@ -1,16 +1,16 @@
-<div class="section">
-  <div class="container">
-    <div class="container-featured grid">
-      <div class="container-featured-info sm-12-12 md-6-12 lg-6-12">
-        <h1 class="container-featured-info-title">{{ data?.title }}</h1>
-        <h2 class="container-featured-info-subtitle">{{ data?.body }}</h2>
-        <button class="container-featured-info-see-more">Ver mais</button>
+<div class="section" *ngIf="data">
+  <div class="featured">
+    <div class="featured-info">
+      <div class="featured-info-content">
+        <h1 class="featured-info-content-title">{{ data?.title }}</h1>
+        <h2 class="featured-info-content-subtitle">{{ data?.body }}</h2>
+        <button class="featured-info-content-see-more">Ver mais</button>
       </div>
-      <div class="container-featured-image sm-12-12 md-6-12 lg-6-12">
-        <img
-          src="assets/images/post-img.svg"
-        />
-      </div>
+    </div>
+    <div class="featured-image">
+      <img
+        src="assets/images/post-img.svg"
+      />
     </div>
   </div>
 </div>
