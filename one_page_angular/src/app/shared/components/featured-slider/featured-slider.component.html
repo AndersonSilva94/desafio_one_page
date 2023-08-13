@@ -1,0 +1,16 @@
+<div class="section" *ngIf="data">
+  <div class="featured">
+    <div class="featured-info">
+      <div class="featured-info-content">
+        <h1 class="featured-info-content-title">{{ data?.title }}</h1>
+        <h2 class="featured-info-content-subtitle">{{ data?.body }}</h2>
+        <button class="featured-info-content-see-more">Ver mais</button>
+      </div>
+    </div>
+    <div class="featured-image">
+      <img
+        src="assets/images/post-img.svg"
+      />
+    </div>
+  </div>
+</div>
