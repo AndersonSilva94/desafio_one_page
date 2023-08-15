@@ -1,0 +1,23 @@
+.section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 111px;
+  row-gap: 68px;
+  padding: 151px 338px 149px 338px;
+  width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .section {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
+}
