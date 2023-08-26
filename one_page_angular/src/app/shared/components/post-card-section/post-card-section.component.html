@@ -1,6 +1,7 @@
 <div class="section" *ngIf="posts">
   <app-post-card
-    *ngFor="let post of posts | slice : 1 : 7"
+    *ngFor="let post of posts | slice : 1 : 7; let i = index"
     [post]="post"
+    [color]="colors[i]"
   ></app-post-card>
 </div>
